@@ -1,0 +1,15 @@
+[
+    {"id":1, "name":"Full Arm", "time":20, "price":75, "description":""},
+    {"id":2, "name":"Half Arm", "time":20, "price":75, "description":""},
+    {"id":3, "name":"Under Arm", "time":20, "price":75, "description":""},
+    {"id":4, "name":"Full leg", "time":20, "price":75, "description":""},
+    {"id":5, "name":"Half leg", "time":20, "price":75, "description":""},
+    {"id":6, "name":"Bikini", "time":20, "price":75, "description":""},
+    {"id":7, "name":"Brazilian bikini", "time":20, "price":75, "description":""},
+    {"id":8, "name":"Back Wax", "time":20, "price":75, "description":""},
+    {"id":9, "name":"Eyebrow", "time":20, "price":75, "description":""},
+    {"id":10, "name":"Lip", "time":15, "price":75, "description":""},
+    {"id":11, "name":"Chin", "time":20, "price":75, "description":""},
+    {"id":12, "name":"Chest wax", "time":20, "price":75, "description":""},
+    {"id":13, "name":"Side face wax", "time":20, "price":75, "description":""}
+]
