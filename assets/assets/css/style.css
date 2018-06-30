@@ -3811,7 +3811,7 @@ letter-spacing: 1px;
 
 .neighborhood-guides {
     background-color:#fff;
-    border-bottom: 15px solid #a7eee9; 
+    border-bottom: 15px solid #f7efed; 
     /* border-right: 30px solid #a7eee9; 
     border-left: 10px solid #a7eee9;  */
 /*  d43786  */
@@ -3933,6 +3933,18 @@ letter-spacing: 1px;
     border-radius: 0 0 0 0px;
 }
 
+@media only screen and (min-width: 721px) {
+    .row-size{
+        margin-right: auto;
+        margin-left: auto;
+        width: 600px;
+    }
+}
 
-
-
+@media only screen and (max-width: 720px) {
+    .row-size{
+        margin-right: 10px;
+        margin-left: 10px;
+        width: 100%;
+    }
+}

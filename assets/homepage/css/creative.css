@@ -30,11 +30,11 @@ a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-  color: #6dc6c0;
+  color: #d1947c;
 }
 a:hover,
 a:focus {
-  color: #6dc6c0;
+  color: #d1947c;
 }
 h1,
 h2,
@@ -51,7 +51,7 @@ p {
 }
 .bg-primary {
   /* background-color: #6dc6c0; */
-  background-color: rgba(167,238,233,0.3)
+  background-color: #f7efed;
 }
 .marg70 {
     margin-top:70px;
@@ -105,7 +105,7 @@ aside {
 }
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
-  color: #6dc6c0 !important;
+  color: #d1947c !important;
   background-color: transparent;
 }
 .navbar-default .nav > li.active > a:hover,
@@ -137,7 +137,7 @@ aside {
     border-color: rgba(34, 34, 34, 0.05);
   }
   .navbar-default.affix .navbar-header .navbar-brand {
-    color: #6dc6c0;
+    color: #d1947c;
     font-size: 14px;
   }
   .navbar-default.affix .navbar-header .navbar-brand:hover,
@@ -415,7 +415,7 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #222222;
+  -webkit-tap-highlight-color: #222222;
 }
 
 
@@ -423,13 +423,13 @@ body {
 /* Reviews */
 .carousel-control.right, .carousel-control.left {
       background-image: none;
-      color: #6dc6c0;
+      color: #d1947c;
   }
   .carousel-indicators li {
-      border-color: #6dc6c0;
+      border-color: #d1947c;
   }
   .carousel-indicators li.active {
-      background-color: #6dc6c0;
+      background-color: #d1947c;
   }
   .item h4 {
       font-size: 14px;
@@ -483,7 +483,7 @@ body {
   
   .custom-btn{
   		color: #fff;
-    	background-color: #02ccba;
+    	background-color: #d1947c;
     	border: 0.125rem solid transparent;
     	box-shadow: 8px 10px 20px 0px rgba(46,61,73,0.15);
     /* width: 7.75rem; */
@@ -496,7 +496,7 @@ body {
     }
     
     .custom-btn:hover{
-    	background-color: #02d1bf;
+    	background-color: #d3a08e;
     	color:#fff !important;
   		box-shadow: 2px 4px 8px 0px rgba(46,61,73,0.2);
     }

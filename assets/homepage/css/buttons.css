@@ -5,7 +5,7 @@
 	color: #fff;
 }
 .bg-2 {
-	background: rgba(167,238,233,0.5);
+	background: #f7efed;
 	color: #ECEFF1;
 	border-radius:5px;
 	box-shadow: 5px 5px 25px 0px rgba(46,61,73,0.1);
@@ -468,7 +468,7 @@
 	background-color: #37474f;
 }
 .button--nuka.button--inverted:hover::after {
-	background-color: #77e0d8;/* changed */
+	background-color: #ecdfdc;/* changed */
 }
 .button--nuka:hover::after,
 .button--nuka:hover::before {
