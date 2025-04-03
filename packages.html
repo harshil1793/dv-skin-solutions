@@ -211,7 +211,7 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-12 col-md-12 col-sm-12 col-ms-12 pull-left">
-                <div class="copyright pull-left">Copyright © 2022 DvSkinSolutions. All rights reserved.</div>
+                <div class="copyright pull-left">Copyright © <span id="currentYear"></span> DvSkinSolutions. All rights reserved.</div>
               </div>
             </div>
           </div>
@@ -257,6 +257,9 @@
   ga('create', 'UA-78504617-1', 'auto');
   ga('send', 'pageview');
 
+</script>
+<script>
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
 </script>
   </body>
 
