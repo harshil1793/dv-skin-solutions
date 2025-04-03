@@ -316,7 +316,7 @@
                     <p><a href="mailto:your-email@your-domain.com">dvskinsolutions@gmail.com</a></p>
                 </div>
                 <div class="col-lg-12">
-                    <p style="color:#777;margin-top:20px" class="pull-left">&copy; Copyrights 2022 DvSkinSolutions. All Rights Received.</p>
+                    <p style="color:#777;margin-top:20px" class="pull-left">&copy; Copyrights <span id="currentYear"></span> DvSkinSolutions. All Rights Received.</p>
 <!--                     <p style="color:#777;margin-top:20px" class="pull-right"> Developed by Harshil Moradia.</p> -->
                 </div>
             </div>
@@ -341,6 +341,7 @@
     <script src="assets/homepage/js/creative.js"></script>
 <script>
 var myCenter=new google.maps.LatLng(41.966866,-88.105900);
+document.getElementById("currentYear").textContent = new Date().getFullYear();
 
 function initialize()
 {
