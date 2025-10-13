@@ -34,185 +34,200 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/base.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/buttons.css" />
 	
-	<!-- Custom Styles for Advanced Treatments -->
+	<!-- Custom Styles for Advanced Treatments - Consistent with Site Design -->
 	<style>
+		/* Pricing Cards - Consistent with existing design */
 		.pricing-card {
 			background: #fff;
-			border-radius: 15px;
-			box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-			margin-bottom: 30px;
+			margin-bottom: 20px;
+			border: 1px solid #f0f0f0;
+			border-radius: 5px;
 			overflow: hidden;
-			transition: transform 0.3s ease, box-shadow 0.3s ease;
-			border: 2px solid #f8f9fa;
+			transition: all 0.25s linear;
 		}
 		
 		.pricing-card:hover {
-			transform: translateY(-5px);
-			box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+			border-color: #ddd;
+			box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 		}
 		
 		.pricing-card.featured {
-			border-color: #007bff;
-			transform: scale(1.05);
-		}
-		
-		.pricing-card.premium {
-			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-			color: white;
-			border-color: #667eea;
-		}
-		
-		.pricing-header {
-			background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-			padding: 25px 20px;
-			text-align: center;
+			border-color: #5AC8FB;
 			position: relative;
 		}
 		
-		.pricing-card.premium .pricing-header {
-			background: rgba(255,255,255,0.1);
+		.pricing-card.featured::before {
+			content: "Most Popular";
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			background: #5AC8FB;
+			color: white;
+			padding: 3px 8px;
+			font-size: 11px;
+			font-weight: 300;
+			border-radius: 3px;
+			z-index: 10;
+		}
+		
+		.pricing-header {
+			background: #f7f7f7;
+			padding: 20px;
+			text-align: center;
+			border-bottom: 1px solid #eee;
 		}
 		
 		.pricing-header h3 {
 			margin: 0 0 10px 0;
-			font-size: 24px;
-			font-weight: 600;
-			color: #333;
+			font-size: 22px;
+			font-weight: 300;
+			color: #404040;
+			font-family: 'Open Sans', sans-serif;
+		}
+		
+		.price-main {
+			font-size: 28px;
+			font-weight: 300;
+			color: #555;
+			margin: 0;
+			font-family: 'Open Sans', sans-serif;
+		}
+		
+		.pricing-details {
+			padding: 20px;
+		}
+		
+		.pricing-details p {
+			margin-bottom: 12px;
+			font-size: 14px;
+			line-height: 1.75;
+			color: #555;
+			font-weight: 300;
+			font-family: 'Open Sans', sans-serif;
+		}
+		
+		.pricing-details strong {
+			color: #404040;
+			font-weight: 400;
+		}
+		
+		.treatment-info {
+			margin-top: 15px;
+			padding-top: 15px;
+			border-top: 1px solid #f0f0f0;
+		}
+		
+		.treatment-info p {
+			margin-bottom: 6px;
+			font-size: 13px;
+			color: #666;
+			font-weight: 300;
+		}
+		
+		.treatment-info i {
+			margin-right: 6px;
+			color: #5AC8FB;
+			width: 14px;
+		}
+		
+		.special-treatment {
+			margin-top: 20px;
+		}
+		
+		.pricing-card.premium {
+			background: #f7efed;
+			border-color: #d43786;
+		}
+		
+		.pricing-card.premium .pricing-header {
+			background: #d43786;
+			color: white;
 		}
 		
 		.pricing-card.premium .pricing-header h3 {
 			color: white;
 		}
 		
-		.price-main {
-			font-size: 36px;
-			font-weight: 700;
-			color: #007bff;
-			margin: 0;
-		}
-		
 		.pricing-card.premium .price-main {
 			color: white;
 		}
 		
-		.badge {
-			position: absolute;
-			top: 15px;
-			right: 15px;
-			background: #28a745;
-			color: white;
-			padding: 5px 12px;
-			border-radius: 20px;
-			font-size: 12px;
-			font-weight: 600;
-		}
-		
-		.badge.premium {
-			background: rgba(255,255,255,0.2);
-			border: 1px solid rgba(255,255,255,0.3);
-		}
-		
-		.pricing-details {
-			padding: 25px 20px;
-		}
-		
-		.pricing-details p {
-			margin-bottom: 15px;
-			font-size: 16px;
-			line-height: 1.6;
-		}
-		
-		.pricing-details strong {
-			color: #333;
-			font-weight: 600;
-		}
-		
-		.treatment-info {
-			margin-top: 20px;
-			padding-top: 20px;
-			border-top: 1px solid #eee;
-		}
-		
-		.treatment-info p {
-			margin-bottom: 8px;
-			font-size: 14px;
-			color: #666;
-		}
-		
-		.treatment-info i {
-			margin-right: 8px;
-			color: #007bff;
-			width: 16px;
-		}
-		
-		.pricing-card.premium .treatment-info {
-			border-top-color: rgba(255,255,255,0.2);
-		}
-		
-		.pricing-card.premium .treatment-info p {
-			color: rgba(255,255,255,0.9);
-		}
-		
-		.pricing-card.premium .treatment-info i {
-			color: white;
-		}
-		
-		.special-treatment {
-			margin-top: 30px;
+		.pricing-card.premium::before {
+			content: "Premium";
+			background: #d43786;
 		}
 		
 		.learn-more {
-			margin-bottom: 30px;
+			margin-bottom: 25px;
 		}
 		
 		.learn-more p {
-			font-size: 18px;
-			line-height: 1.8;
+			font-size: 14px;
+			line-height: 1.75;
 			color: #555;
+			font-weight: 300;
+			font-family: 'Open Sans', sans-serif;
 		}
 		
 		.pricing-info {
 			display: flex;
-			align-items: center;
+			align-items: flex-start;
 		}
 		
-		.neighborhood-guides {
-			margin-bottom: 60px;
-		}
-		
+		/* Override neighborhood-guides for consistency */
 		.neighborhood-guides h2 {
-			color: #333;
-			margin-bottom: 20px;
-			font-size: 32px;
-			font-weight: 700;
+			color: #404040;
+			font-size: 26px;
+			font-weight: 300;
 			text-align: center;
+			margin-top: 40px;
+			margin-bottom: 30px;
+			font-family: 'Open Sans', sans-serif;
+			text-shadow: 2px 2px #eee;
 		}
 		
+		/* Series pricing styling */
 		.pricing-card.series {
-			border-color: #28a745;
+			border-color: #5AC8FB;
 		}
 		
 		.pricing-card.series .price-main {
-			color: #28a745;
+			color: #5AC8FB;
 		}
 		
 		/* Responsive Design */
 		@media (max-width: 768px) {
-			.pricing-card.featured {
-				transform: none;
-			}
-			
-			.price-main {
-				font-size: 28px;
-			}
-			
 			.pricing-header {
-				padding: 20px 15px;
+				padding: 15px;
 			}
 			
 			.pricing-details {
-				padding: 20px 15px;
+				padding: 15px;
 			}
+			
+			.price-main {
+				font-size: 24px;
+			}
+			
+			.pricing-card.featured::before {
+				position: static;
+				display: block;
+				margin-bottom: 10px;
+				text-align: center;
+			}
+		}
+		
+		/* Ensure consistency with existing layout */
+		.neighborhood-guides {
+			background-color: #fff;
+			border-bottom: 15px solid #f7efed;
+		}
+		
+		.neighborhood-guides p {
+			font-size: 14px;
+			line-height: 1.75;
+			color: #555;
+			font-weight: 300;
 		}
 	</style>
     
@@ -320,7 +335,6 @@
                             <div class="pricing-header">
                                 <h3>Level 2</h3>
                                 <div class="price-main">$155</div>
-                                <span class="badge">Most Popular</span>
                             </div>
                             <div class="pricing-details">
                                 <p><strong>Single Treatment:</strong> $155</p>
@@ -354,7 +368,6 @@
                                 <div class="pricing-header">
                                     <h3>Refined Peel</h3>
                                     <div class="price-main">$175</div>
-                                    <span class="badge premium">Premium</span>
                                 </div>
                                 <div class="pricing-details">
                                     <p>Our most advanced chemical peel treatment for dramatic skin transformation</p>
