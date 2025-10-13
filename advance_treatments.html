@@ -33,6 +33,188 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/vicons-font.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/base.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/buttons.css" />
+	
+	<!-- Custom Styles for Advanced Treatments -->
+	<style>
+		.pricing-card {
+			background: #fff;
+			border-radius: 15px;
+			box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+			margin-bottom: 30px;
+			overflow: hidden;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			border: 2px solid #f8f9fa;
+		}
+		
+		.pricing-card:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+		}
+		
+		.pricing-card.featured {
+			border-color: #007bff;
+			transform: scale(1.05);
+		}
+		
+		.pricing-card.premium {
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			color: white;
+			border-color: #667eea;
+		}
+		
+		.pricing-header {
+			background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+			padding: 25px 20px;
+			text-align: center;
+			position: relative;
+		}
+		
+		.pricing-card.premium .pricing-header {
+			background: rgba(255,255,255,0.1);
+		}
+		
+		.pricing-header h3 {
+			margin: 0 0 10px 0;
+			font-size: 24px;
+			font-weight: 600;
+			color: #333;
+		}
+		
+		.pricing-card.premium .pricing-header h3 {
+			color: white;
+		}
+		
+		.price-main {
+			font-size: 36px;
+			font-weight: 700;
+			color: #007bff;
+			margin: 0;
+		}
+		
+		.pricing-card.premium .price-main {
+			color: white;
+		}
+		
+		.badge {
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			background: #28a745;
+			color: white;
+			padding: 5px 12px;
+			border-radius: 20px;
+			font-size: 12px;
+			font-weight: 600;
+		}
+		
+		.badge.premium {
+			background: rgba(255,255,255,0.2);
+			border: 1px solid rgba(255,255,255,0.3);
+		}
+		
+		.pricing-details {
+			padding: 25px 20px;
+		}
+		
+		.pricing-details p {
+			margin-bottom: 15px;
+			font-size: 16px;
+			line-height: 1.6;
+		}
+		
+		.pricing-details strong {
+			color: #333;
+			font-weight: 600;
+		}
+		
+		.treatment-info {
+			margin-top: 20px;
+			padding-top: 20px;
+			border-top: 1px solid #eee;
+		}
+		
+		.treatment-info p {
+			margin-bottom: 8px;
+			font-size: 14px;
+			color: #666;
+		}
+		
+		.treatment-info i {
+			margin-right: 8px;
+			color: #007bff;
+			width: 16px;
+		}
+		
+		.pricing-card.premium .treatment-info {
+			border-top-color: rgba(255,255,255,0.2);
+		}
+		
+		.pricing-card.premium .treatment-info p {
+			color: rgba(255,255,255,0.9);
+		}
+		
+		.pricing-card.premium .treatment-info i {
+			color: white;
+		}
+		
+		.special-treatment {
+			margin-top: 30px;
+		}
+		
+		.learn-more {
+			margin-bottom: 30px;
+		}
+		
+		.learn-more p {
+			font-size: 18px;
+			line-height: 1.8;
+			color: #555;
+		}
+		
+		.pricing-info {
+			display: flex;
+			align-items: center;
+		}
+		
+		.neighborhood-guides {
+			margin-bottom: 60px;
+		}
+		
+		.neighborhood-guides h2 {
+			color: #333;
+			margin-bottom: 20px;
+			font-size: 32px;
+			font-weight: 700;
+			text-align: center;
+		}
+		
+		.pricing-card.series {
+			border-color: #28a745;
+		}
+		
+		.pricing-card.series .price-main {
+			color: #28a745;
+		}
+		
+		/* Responsive Design */
+		@media (max-width: 768px) {
+			.pricing-card.featured {
+				transform: none;
+			}
+			
+			.price-main {
+				font-size: 28px;
+			}
+			
+			.pricing-header {
+				padding: 20px 15px;
+			}
+			
+			.pricing-details {
+				padding: 20px 15px;
+			}
+		}
+	</style>
     
 <!--
     <script type="text/javascript">
@@ -108,42 +290,193 @@
                 </div>
             </div>
         <div class="row marg30">
-            <div class="neighborhood-guides" >
-                <div class="container">
-                    
-                    <div class="row ">
-                        <h2>Chemical Peels/Resurfacing treatment</h2>
-                        <div class="col-md-8 learn-more ">
-                            <p>Chemical peel is an advance treatment to exfoliate dead skin with help of acid to improve tone and texture of skin, and helps reduce fine lines and wrinkles.</p>
-                        </div>
-                        <div class="col-md-3">
-                            <p>Time <span>60 Mins</span></p>
-                            <p>Price <span>$150</span></p>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-                
-            </div>
             
-            <div class="neighborhood-guides" >
+            <!-- Chemical Peels Section -->
+            <div class="neighborhood-guides">
                 <div class="container">
-                    
-                    <div class="row ">
-                    <h2>Microdermabrasion</h2>
-                        <div class="col-md-8 learn-more ">
-                            <p>Aggressive  exfoliation is done with help of dimond tips to improve hyperpigmentation, uneven skin tone, Acne scars, fine lines, and wrinkles.</p>
-                        </div>
-                        <div class="col-md-3">
-                            <p>with facial - 75 mins - $125</p>
+                    <div class="row">
+                        <h2>Chemical Peels</h2>
+                        <div class="col-md-12 learn-more">
+                            <p>Chemical peels are advanced treatments that use specialized acids to exfoliate dead skin cells, improve skin tone and texture, reduce fine lines and wrinkles, and address various skin concerns. Our multi-level approach ensures optimal results for every skin type.</p>
                         </div>
                         
+                        <div class="col-md-4 pricing-card">
+                            <div class="pricing-header">
+                                <h3>Level 1</h3>
+                                <div class="price-main">$135</div>
+                            </div>
+                            <div class="pricing-details">
+                                <p><strong>Single Treatment:</strong> $135</p>
+                                <p><strong>Series of 3:</strong> $375 ($125 each)</p>
+                                <p><strong>Post Care Kit:</strong> $45</p>
+                                <div class="treatment-info">
+                                    <p><i class="fa fa-clock-o"></i> 60 minutes</p>
+                                    <p><i class="fa fa-user-md"></i> Mild exfoliation</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 pricing-card featured">
+                            <div class="pricing-header">
+                                <h3>Level 2</h3>
+                                <div class="price-main">$155</div>
+                                <span class="badge">Most Popular</span>
+                            </div>
+                            <div class="pricing-details">
+                                <p><strong>Single Treatment:</strong> $155</p>
+                                <p><strong>Series of 3:</strong> $420 ($140 each)</p>
+                                <p><strong>Post Care Kit:</strong> Included</p>
+                                <div class="treatment-info">
+                                    <p><i class="fa fa-clock-o"></i> 75 minutes</p>
+                                    <p><i class="fa fa-user-md"></i> Moderate correction</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 pricing-card">
+                            <div class="pricing-header">
+                                <h3>Level 3</h3>
+                                <div class="price-main">$165</div>
+                            </div>
+                            <div class="pricing-details">
+                                <p><strong>Single Treatment:</strong> $165</p>
+                                <p><strong>Series of 3:</strong> $447 ($149 each)</p>
+                                <p><strong>Post Care Kit:</strong> Included</p>
+                                <div class="treatment-info">
+                                    <p><i class="fa fa-clock-o"></i> 90 minutes</p>
+                                    <p><i class="fa fa-user-md"></i> Advanced correction + booster</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-12 special-treatment">
+                            <div class="pricing-card premium">
+                                <div class="pricing-header">
+                                    <h3>Refined Peel</h3>
+                                    <div class="price-main">$175</div>
+                                    <span class="badge premium">Premium</span>
+                                </div>
+                                <div class="pricing-details">
+                                    <p>Our most advanced chemical peel treatment for dramatic skin transformation</p>
+                                    <div class="treatment-info">
+                                        <p><i class="fa fa-clock-o"></i> 90 minutes</p>
+                                        <p><i class="fa fa-star"></i> Maximum results</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
                 </div>
-                
-            </div> 
+            </div>
+
+            <!-- Pro Cell Microchanneling Section -->
+            <div class="neighborhood-guides">
+                <div class="container">
+                    <div class="row">
+                        <h2>Pro Cell Microchanneling</h2>
+                        <div class="col-md-8 learn-more">
+                            <p>Pro Cell Microchanneling is a revolutionary skin treatment that creates controlled micro-injuries to stimulate the body's natural healing process. This advanced technique promotes collagen production, improves skin texture, and addresses scars, fine lines, and uneven skin tone. Best results achieved through a series of treatments.</p>
+                        </div>
+                        <div class="col-md-4 pricing-info">
+                            <div class="pricing-card series">
+                                <div class="pricing-header">
+                                    <h3>Recommended Series</h3>
+                                    <div class="price-main">$1,200</div>
+                                </div>
+                                <div class="pricing-details">
+                                    <p><strong>Series of 4:</strong> $1,200 total</p>
+                                    <p><strong>Per Treatment:</strong> $300 each</p>
+                                    <div class="treatment-info">
+                                        <p><i class="fa fa-clock-o"></i> 60 minutes per session</p>
+                                        <p><i class="fa fa-video-camera"></i> Video consultation included</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dermaplaning Section -->
+            <div class="neighborhood-guides">
+                <div class="container">
+                    <div class="row">
+                        <h2>Dermaplaning</h2>
+                        <div class="col-md-8 learn-more">
+                            <p>Dermaplaning is a non-invasive skin exfoliation procedure that uses a sterile, surgical blade to gently remove dead skin cells and fine hairs from the face. This treatment reveals smoother, brighter skin and allows for better product penetration. Safe for all skin types and provides immediate results.</p>
+                        </div>
+                        <div class="col-md-4 pricing-info">
+                            <div class="pricing-card">
+                                <div class="pricing-header">
+                                    <h3>Dermaplaning Options</h3>
+                                </div>
+                                <div class="pricing-details">
+                                    <p><strong>Half Face:</strong> $75</p>
+                                    <p><strong>Full Face:</strong> $125</p>
+                                    <div class="treatment-info">
+                                        <p><i class="fa fa-clock-o"></i> 45-60 minutes</p>
+                                        <p><i class="fa fa-check-circle"></i> No downtime</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Celluma LED Treatment Section -->
+            <div class="neighborhood-guides">
+                <div class="container">
+                    <div class="row">
+                        <h2>Celluma LED Light Therapy</h2>
+                        <div class="col-md-8 learn-more">
+                            <p>Celluma light therapy uses FDA-cleared red and blue LED technology to treat various skin concerns. The flexible device sits close to the treatment area for maximum effectiveness. Blue light kills acne bacteria and reduces inflammation and redness, while red light is anti-aging and helps generate collagen, reduce wrinkles, and rejuvenate the skin.</p>
+                        </div>
+                        <div class="col-md-4 pricing-info">
+                            <div class="pricing-card">
+                                <div class="pricing-header">
+                                    <h3>LED Treatment</h3>
+                                    <div class="price-main">$95</div>
+                                </div>
+                                <div class="pricing-details">
+                                    <p><strong>Single Session:</strong> $95</p>
+                                    <p><strong>Series of 6:</strong> $510 ($85 each)</p>
+                                    <div class="treatment-info">
+                                        <p><i class="fa fa-clock-o"></i> 30 minutes</p>
+                                        <p><i class="fa fa-certificate"></i> FDA-cleared device</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Microdermabrasion Section (Updated) -->
+            <div class="neighborhood-guides">
+                <div class="container">
+                    <div class="row">
+                        <h2>Microdermabrasion</h2>
+                        <div class="col-md-8 learn-more">
+                            <p>Aggressive exfoliation treatment using diamond tips to improve hyperpigmentation, uneven skin tone, acne scars, fine lines, and wrinkles. This mechanical exfoliation removes dead skin cells and stimulates cell renewal for smoother, more radiant skin.</p>
+                        </div>
+                        <div class="col-md-4 pricing-info">
+                            <div class="pricing-card">
+                                <div class="pricing-header">
+                                    <h3>Microdermabrasion</h3>
+                                </div>
+                                <div class="pricing-details">
+                                    <p><strong>With Facial:</strong> $125</p>
+                                    <div class="treatment-info">
+                                        <p><i class="fa fa-clock-o"></i> 75 minutes</p>
+                                        <p><i class="fa fa-diamond"></i> Diamond tip technology</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
           
       </div>  
