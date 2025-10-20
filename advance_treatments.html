@@ -61,11 +61,11 @@
 			position: absolute;
 			top: 10px;
 			right: 10px;
-			background: #5AC8FB;
+			background: #e7bfd3;
 			color: white;
 			padding: 3px 8px;
 			font-size: 11px;
-			font-weight: 300;
+			font-weight: 500;
 			border-radius: 3px;
 			z-index: 10;
 		}
@@ -126,7 +126,7 @@
 		
 		.treatment-info i {
 			margin-right: 6px;
-			color: #d173a2;
+			color: #ddbbb3;
 			width: 14px;
 		}
 		
@@ -135,7 +135,7 @@
 		}
 		
 		.pricing-card.premium {
-			background: #f7efed;
+			background: #fff;
 			border-color: #e7bfd3;
 		}
 		
@@ -144,18 +144,18 @@
 			color: white;
 		}
 		
-		.pricing-card.premium .pricing-header h3 {
+		/* .pricing-card.premium .pricing-header h3 {
 			color: white;
-		}
+		} */
 		
 		.pricing-card.premium .price-main {
 			color: white;
 		}
 		
-		.pricing-card.premium::before {
+		/* .pricing-card.premium::before {
 			content: "Premium";
 			background: #e7bfd3;
-		}
+		} */
 		
 		.learn-more {
 			margin-bottom: 25px;
@@ -215,7 +215,33 @@
 				margin-bottom: 10px;
 				text-align: center;
 			}
+            .pricing-info {
+                display: flex;
+                flex-direction: column; /* stack the column on small screens */
+                align-items: center;    /* center the card horizontally */
+                justify-content: center;
+            }
+
+            .pricing-info .pricing-card {
+                width: 100%;
+                max-width: 360px; /* limit card width so it looks centered and not full-bleed */
+                margin: 0 auto;
+            }
 		}
+        @media (max-width: 925px) {
+            .pricing-info {
+                display: flex;
+                flex-direction: column; /* stack the column on small screens */
+                align-items: center;    /* center the card horizontally */
+                justify-content: center;
+            }
+
+            .pricing-info .pricing-card {
+                width: 100%;
+                max-width: 360px; /* limit card width so it looks centered and not full-bleed */
+                margin: 0 auto;
+            }
+        }
 		
 		/* Ensure consistency with existing layout */
 		.neighborhood-guides {
