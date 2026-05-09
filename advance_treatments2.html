@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" class="no-js">
   
@@ -28,15 +27,14 @@
     <link href="assets/assets/css/prettyphoto.css" media="screen" rel="stylesheet" type="text/css"  >
     <link href="assets/assets/css/layouts/default.css" media="screen" rel="stylesheet" type="text/css"  >
     
-
 	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/vicons-font.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/base.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/buttons.css" />
 	
-	<!-- Custom Styles for Advanced Treatments - Consistent with Site Design -->
+	<!-- Custom Styles for Advanced Treatments - Peach Color Scheme -->
 	<style>
-		/* Pricing Cards - Consistent with existing design */
+		/* Pricing Cards with Peach Theme */
 		.pricing-card {
 			background: #fff;
 			margin-bottom: 20px;
@@ -47,12 +45,12 @@
 		}
 		
 		.pricing-card:hover {
-			border-color: #ddd;
-			box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+			border-color: #e7bfd3;
+			box-shadow: 0 2px 8px rgba(231, 191, 211, 0.3);
 		}
 		
 		.pricing-card.featured {
-			border-color: #5AC8FB;
+			border-color: #e7bfd3;
 			position: relative;
 		}
 		
@@ -65,16 +63,16 @@
 			color: white;
 			padding: 3px 8px;
 			font-size: 11px;
-			font-weight: 500;
+			font-weight: 300;
 			border-radius: 3px;
 			z-index: 10;
 		}
 		
 		.pricing-header {
-			background: #f7f7f7;
+			background: #f7efed;
 			padding: 20px;
 			text-align: center;
-			border-bottom: 1px solid #eee;
+			border-bottom: 1px solid #e7bfd3;
 		}
 		
 		.pricing-header h3 {
@@ -88,7 +86,7 @@
 		.price-main {
 			font-size: 28px;
 			font-weight: 300;
-			color: #555;
+			color: #d173a2;
 			margin: 0;
 			font-family: 'Open Sans', sans-serif;
 		}
@@ -107,14 +105,14 @@
 		}
 		
 		.pricing-details strong {
-			color: #404040;
+			color: #d173a2;
 			font-weight: 400;
 		}
 		
 		.treatment-info {
 			margin-top: 15px;
 			padding-top: 15px;
-			border-top: 1px solid #f0f0f0;
+			border-top: 1px solid #f7efed;
 		}
 		
 		.treatment-info p {
@@ -126,7 +124,7 @@
 		
 		.treatment-info i {
 			margin-right: 6px;
-			color: #ddbbb3;
+			color: #d173a2;
 			width: 14px;
 		}
 		
@@ -135,7 +133,7 @@
 		}
 		
 		.pricing-card.premium {
-			background: #fff;
+			background: #f7efed;
 			border-color: #e7bfd3;
 		}
 		
@@ -144,18 +142,18 @@
 			color: white;
 		}
 		
-		/* .pricing-card.premium .pricing-header h3 {
+		.pricing-card.premium .pricing-header h3 {
 			color: white;
-		} */
+		}
 		
 		.pricing-card.premium .price-main {
 			color: white;
 		}
 		
-		/* .pricing-card.premium::before {
+		.pricing-card.premium::before {
 			content: "Premium";
-			background: #e7bfd3;
-		} */
+			background: #d173a2;
+		}
 		
 		.learn-more {
 			margin-bottom: 25px;
@@ -174,16 +172,28 @@
 			align-items: flex-start;
 		}
 		
-		/* Override neighborhood-guides for consistency */
+		/* Override neighborhood-guides for consistency with peach theme */
+		.neighborhood-guides {
+			background-color: #fff;
+			border-bottom: 15px solid #f7efed;
+		}
+		
 		.neighborhood-guides h2 {
-			color: #404040;
+			color: #d173a2;
 			font-size: 26px;
 			font-weight: 300;
 			text-align: center;
 			margin-top: 40px;
 			margin-bottom: 30px;
 			font-family: 'Open Sans', sans-serif;
-			text-shadow: 2px 2px #eee;
+			text-shadow: 2px 2px #f7efed;
+		}
+		
+		.neighborhood-guides p {
+			font-size: 14px;
+			line-height: 1.75;
+			color: #555;
+			font-weight: 300;
 		}
 		
 		/* Series pricing styling */
@@ -192,7 +202,12 @@
 		}
 		
 		.pricing-card.series .price-main {
-			color: #e7bfd3;
+			color: #d173a2;
+		}
+		
+		.pricing-card.series .pricing-header {
+			background: #f7efed;
+			border-bottom: 1px solid #e7bfd3;
 		}
 		
 		/* Responsive Design */
@@ -215,61 +230,8 @@
 				margin-bottom: 10px;
 				text-align: center;
 			}
-            .pricing-info {
-                display: flex;
-                flex-direction: column; /* stack the column on small screens */
-                align-items: center;    /* center the card horizontally */
-                justify-content: center;
-            }
-
-            .pricing-info .pricing-card {
-                width: 100%;
-                max-width: 360px; /* limit card width so it looks centered and not full-bleed */
-                margin: 0 auto;
-            }
-		}
-        @media (max-width: 925px) {
-            .pricing-info {
-                display: flex;
-                flex-direction: column; /* stack the column on small screens */
-                align-items: center;    /* center the card horizontally */
-                justify-content: center;
-            }
-
-            .pricing-info .pricing-card {
-                width: 100%;
-                max-width: 360px; /* limit card width so it looks centered and not full-bleed */
-                margin: 0 auto;
-            }
-        }
-		
-		/* Ensure consistency with existing layout */
-		.neighborhood-guides {
-			background-color: #fff;
-			border-bottom: 15px solid #f7efed;
-		}
-		
-		.neighborhood-guides p {
-			font-size: 14px;
-			line-height: 1.75;
-			color: #555;
-			font-weight: 300;
 		}
 	</style>
-    
-<!--
-    <script type="text/javascript">
-		  app = angular.module('App',[]);
-  			
-		  app.controller('myController', function($scope,$http) {
-		         $http.get('facial.json')
-		         .success(function(response) {
-                     $scope.cribs = response;
-		          });
-		  }); 
-		  
-		</script>
--->
 </head>
 
 <body>
@@ -336,124 +298,21 @@
             <div class="neighborhood-guides">
                 <div class="container">
                     <div class="row">
-                        <h2>Chemical Peels</h2>
+                        <h2>Chemical Peels/Resurfacing Treatment</h2>
                         <div class="col-md-12 learn-more">
-                            <p>Chemical peels are advanced treatments that use specialized acids to exfoliate dead skin cells, improve skin tone and texture, reduce fine lines and wrinkles, and address various skin concerns. Our multi-level approach ensures optimal results for every skin type.</p>
+                            <p>Chemical peel is an advance treatment to exfoliate dead skin with help of acid to improve tone and texture of skin, and helps reduce fine lines and wrinkles.</p>
                         </div>
                         
-                        <div class="col-md-4 pricing-card">
-                            <div class="pricing-header">
-                                <h3>Level 1</h3>
-                                <div class="price-main">$135</div>
-                            </div>
-                            <div class="pricing-details">
-                                <p><strong>Single Treatment:</strong> $135</p>
-                                <p><strong>Series of 3:</strong> $375 ($125 each)</p>
-                                <p><strong>Post Care Kit:</strong> Included</p>
-                                <div class="treatment-info">
-                                    <p><i class="fa fa-clock-o"></i> 60 minutes</p>
-                                    <p><i class="fa fa-user-md"></i> Mild exfoliation</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-4 pricing-card featured">
-                            <div class="pricing-header">
-                                <h3>Level 2</h3>
-                                <div class="price-main">$155</div>
-                            </div>
-                            <div class="pricing-details">
-                                <p><strong>Single Treatment:</strong> $155</p>
-                                <p><strong>Series of 3:</strong> $420 ($140 each)</p>
-                                <p><strong>Post Care Kit:</strong> Included</p>
-                                <div class="treatment-info">
-                                    <p><i class="fa fa-clock-o"></i> 75 minutes</p>
-                                    <p><i class="fa fa-user-md"></i> Moderate correction</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-4 pricing-card">
-                            <div class="pricing-header">
-                                <h3>Level 3</h3>
-                                <div class="price-main">$165</div>
-                            </div>
-                            <div class="pricing-details">
-                                <p><strong>Single Treatment:</strong> $165</p>
-                                <p><strong>Series of 3:</strong> $447 ($149 each)</p>
-                                <p><strong>Post Care Kit:</strong> Included</p>
-                                <div class="treatment-info">
-                                    <p><i class="fa fa-clock-o"></i> 90 minutes</p>
-                                    <p><i class="fa fa-user-md"></i> Advanced correction + booster</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-12 special-treatment">
-                            <div class="pricing-card premium">
-                                <div class="pricing-header">
-                                    <h3>Retinol Peel/Cool Peel</h3>
-                                    <div class="price-main">$175</div>
-                                </div>
-                                <div class="pricing-details">
-                                    <p>Our most advanced chemical peel treatment for dramatic skin transformation</p>
-                                    <div class="treatment-info">
-                                        <p><i class="fa fa-clock-o"></i> 90 minutes</p>
-                                        <p><i class="fa fa-star"></i> Maximum results</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Pro Cell Microchanneling Section -->
-            <div class="neighborhood-guides">
-                <div class="container">
-                    <div class="row">
-                        <h2>Pro Cell Microchanneling</h2>
-                        <div class="col-md-8 learn-more">
-                            <p>Pro Cell Microchanneling is a revolutionary skin treatment that creates controlled micro-injuries to stimulate the body's natural healing process. This advanced technique promotes collagen production, improves skin texture, and addresses scars, fine lines, and uneven skin tone. Best results achieved through a series of treatments.</p>
-                        </div>
-                        <div class="col-md-4 pricing-info">
-                            <div class="pricing-card series">
-                                <div class="pricing-header">
-                                    <h3>Recommended Series</h3>
-                                    <div class="price-main">$1,200</div>
-                                </div>
-                                <div class="pricing-details">
-                                    <p><strong>Series of 4:</strong> $1,200 total</p>
-                                    <p><strong>Per Treatment:</strong> $300 each</p>
-                                    <div class="treatment-info">
-                                        <p><i class="fa fa-clock-o"></i> 60 minutes per session</p>
-                                        <p><i class="fa fa-video-camera"></i> Video consultation included</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Dermaplaning Section -->
-            <div class="neighborhood-guides">
-                <div class="container">
-                    <div class="row">
-                        <h2>Dermaplaning</h2>
-                        <div class="col-md-8 learn-more">
-                            <p>This treatment reveals smoother, brighter skin and allows for better product penetration. Safe for all skin types and provides immediate results.</p>
-                        </div>
-                        <div class="col-md-4 pricing-info">
+                        <div class="col-md-12">
                             <div class="pricing-card">
                                 <div class="pricing-header">
-                                    <h3>Dermaplaning Options</h3>
+                                    <h3>Chemical Peel Treatment</h3>
+                                    <div class="price-main">$150</div>
                                 </div>
                                 <div class="pricing-details">
-                                    <p>$125</p>
                                     <div class="treatment-info">
-                                        <p><i class="fa fa-clock-o"></i> 90 minutes</p>
-                                        <p><i class="fa fa-check-circle"></i> No downtime</p>
+                                        <p><i class="fa fa-clock-o"></i> 60 Minutes</p>
+                                        <p><i class="fa fa-user-md"></i> Advanced exfoliation treatment</p>
                                     </div>
                                 </div>
                             </div>
@@ -462,41 +321,13 @@
                 </div>
             </div>
 
-            <!-- Celluma LED Treatment Section -->
-            <div class="neighborhood-guides">
-                <div class="container">
-                    <div class="row">
-                        <h2>Celluma LED Light Therapy</h2>
-                        <div class="col-md-8 learn-more">
-                            <p>Celluma light therapy uses FDA-cleared red and blue LED technology to treat various skin concerns. The flexible device sits close to the treatment area for maximum effectiveness. Blue light kills acne bacteria and reduces inflammation and redness, while red light is anti-aging and helps generate collagen, reduce wrinkles, and rejuvenate the skin.</p>
-                        </div>
-                        <div class="col-md-4 pricing-info">
-                            <div class="pricing-card">
-                                <div class="pricing-header">
-                                    <h3>LED Treatment</h3>
-                                    <div class="price-main">$95</div>
-                                </div>
-                                <div class="pricing-details">
-                                    <p><strong>Single Session:</strong> $95</p>
-                                    <p><strong>Series of 6:</strong> $510 ($85 each)</p>
-                                    <div class="treatment-info">
-                                        <p><i class="fa fa-clock-o"></i> 60 minutes</p>
-                                        <p><i class="fa fa-certificate"></i> FDA-cleared device</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Microdermabrasion Section (Updated) -->
+            <!-- Microdermabrasion Section -->
             <div class="neighborhood-guides">
                 <div class="container">
                     <div class="row">
                         <h2>Microdermabrasion</h2>
                         <div class="col-md-8 learn-more">
-                            <p>Aggressive exfoliation treatment using diamond tips to improve hyperpigmentation, uneven skin tone, acne scars, fine lines, and wrinkles. This mechanical exfoliation removes dead skin cells and stimulates cell renewal for smoother, more radiant skin.</p>
+                            <p>Aggressive exfoliation is done with help of dimond tips to improve hyperpigmentation, uneven skin tone, Acne scars, fine lines, and wrinkles.</p>
                         </div>
                         <div class="col-md-4 pricing-info">
                             <div class="pricing-card">
@@ -521,8 +352,6 @@
     </div>
     	
         <!--   Footer   -->
-      
-        
         <div class="footer-bottom onepage" id="facial_treatments">
           <div class="container">
             <div class="row">
@@ -539,7 +368,6 @@
     <script src="../app/app.js"></script>
     <script src="../app/AngController.js"></script>
     <script src="../app/AngFactory.js"></script>
-<!--        <script src="../app/AngFilter.js"></script>-->
       
     <script type="text/javascript" src="assets/assets/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
     <script type="text/javascript" src="assets/assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
